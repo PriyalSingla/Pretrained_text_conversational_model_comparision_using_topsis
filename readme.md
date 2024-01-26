@@ -2,13 +2,13 @@
 
 ```mermaid
 graph LR;
-  Start --- LoadData;
-  LoadData --- PreprocessText;
-  PreprocessText --- ChooseMetrics;
+  Start > LoadData;
+  LoadData --> PreprocessText;
+  PreprocessText --> ChooseMetrics;
   ChooseMetrics --> ApplyTOPSIS;
-  ApplyTOPSIS --- RankModels;
-  RankModels --- VisualizeResults;
-  VisualizeResults --- End;
+  ApplyTOPSIS --> RankModels;
+  RankModels --> VisualizeResults;
+  VisualizeResults --> End;
 ```
 
 ## Overview
