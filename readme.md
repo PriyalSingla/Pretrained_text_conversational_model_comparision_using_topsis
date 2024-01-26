@@ -1,7 +1,7 @@
 # Text Conversational Model Comparison Project
 
 ```mermaid
-graph LR;
+graph TD;
   Start > LoadData;
   LoadData --> PreprocessText;
   PreprocessText --> ChooseMetrics;
