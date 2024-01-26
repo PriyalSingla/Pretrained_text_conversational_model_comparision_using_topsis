@@ -2,7 +2,7 @@
 
 ```mermaid
 graph TD;
-  Start > LoadData;
+  Start --> LoadData;
   LoadData --> PreprocessText;
   PreprocessText --> ChooseMetrics;
   ChooseMetrics --> ApplyTOPSIS;
