@@ -1,0 +1,7 @@
+Model,Accuracy,F1_Score,Precision,Recall,TOPSIS_Score,Rank
+bert-base-uncased,0.85,0.89,0.88,0.87,0.52040369,5
+distilbert-base-uncased,0.88,0.91,0.89,0.9,0.840673446,1
+gpt2,0.82,0.87,0.85,0.84,0.205970088,6
+roberta-base,0.87,0.9,0.88,0.89,0.710712185,2
+t5-base,0.89,0.92,0.91,0.8,0.586864316,3
+electra-base,0.86,0.89,0.87,0.88,0.579376853,4
