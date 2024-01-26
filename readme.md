@@ -2,13 +2,17 @@
 
 ```mermaid
 graph TD;
-  Start --> LoadData;
-  LoadData --> PreprocessText;
-  PreprocessText --> ChooseMetrics;
-  ChooseMetrics --> ApplyTOPSIS;
-  ApplyTOPSIS --> RankModels;
-  RankModels --> VisualizeResults;
-  VisualizeResults --> End;
+  Start -->|Step 1| LoadData;
+  LoadData -->|Step 2| PreprocessText;
+  PreprocessText -->|Step 3| ChooseMetrics;
+  ChooseMetrics -->|Step 4| ApplyTOPSIS;
+  ApplyTOPSIS -->|Step 5| RankModels;
+  RankModels -->|Step 6| VisualizeResults;
+  VisualizeResults -->|Step 7| End;
+
+style Start, End fill:#77b5e3,stroke:#555,stroke-width:2px,stroke-dasharray: 5,5;
+style LoadData, PreprocessText, ChooseMetrics, ApplyTOPSIS, RankModels, VisualizeResults fill:#8cd17d,stroke:#555,stroke-width:2px,stroke-dasharray: 5,5;
+
 ```
 
 ## Overview
