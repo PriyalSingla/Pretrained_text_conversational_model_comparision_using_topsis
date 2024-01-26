@@ -10,9 +10,6 @@ graph TD;
   RankModels -->|Step 6| VisualizeResults;
   VisualizeResults -->|Step 7| End;
 
-style Start, End fill:#77b5e3,stroke:#555,stroke-width:2px,stroke-dasharray: 5,5;
-style LoadData, PreprocessText, ChooseMetrics, ApplyTOPSIS, RankModels, VisualizeResults fill:#8cd17d,stroke:#555,stroke-width:2px,stroke-dasharray: 5,5;
-
 ```
 
 ## Overview
