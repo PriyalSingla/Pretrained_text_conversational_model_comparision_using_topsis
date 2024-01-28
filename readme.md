@@ -1,14 +1,26 @@
 # Text Conversational Model Comparison Project
 
 ```mermaid
-graph TD;
-  Start -->|Step 1| LoadData;
-  LoadData -->|Step 2| PreprocessText;
-  PreprocessText -->|Step 3| ChooseMetrics;
-  ChooseMetrics -->|Step 4| ApplyTOPSIS;
-  ApplyTOPSIS -->|Step 5| RankModels;
-  RankModels -->|Step 6| VisualizeResults;
-  VisualizeResults -->|Step 7| End;
+
+digraph flowchart {
+  Start [label="Start"]
+  LoadData [label="Step 1: Load Data"]
+  PreprocessText [label="Step 2: Preprocess Text"]
+  ChooseMetrics [label="Step 3: Choose Metrics"]
+  ApplyTOPSIS [label="Step 4: Apply TOPSIS"]
+  RankModels [label="Step 5: Rank Models"]
+  VisualizeResults [label="Step 6: Visualize Results"]
+  End [label="Step 7: End"]
+
+  Start -> LoadData
+  LoadData -> PreprocessText
+  PreprocessText -> ChooseMetrics
+  ChooseMetrics -> ApplyTOPSIS
+  ApplyTOPSIS -> RankModels
+  RankModels -> VisualizeResults
+  VisualizeResults -> End
+}
+
 
 ```
 
