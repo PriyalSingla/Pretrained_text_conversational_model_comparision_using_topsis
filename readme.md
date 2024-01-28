@@ -1,23 +1,5 @@
 # Text Conversational Model Comparison Project
 
-```mermaid
-
-flowchart = [
-    {"step": "Start", "action": "Step 1", "next": "LoadData"},
-    {"step": "LoadData", "action": "Step 2", "next": "PreprocessText"},
-    {"step": "PreprocessText", "action": "Step 3", "next": "ChooseMetrics"},
-    {"step": "ChooseMetrics", "action": "Step 4", "next": "ApplyTOPSIS"},
-    {"step": "ApplyTOPSIS", "action": "Step 5", "next": "RankModels"},
-    {"step": "RankModels", "action": "Step 6", "next": "VisualizeResults"},
-    {"step": "VisualizeResults", "action": "Step 7", "next": "End"},
-]
-
-for step in flowchart:
-    print(f"{step['step']} -->|{step['action']}| {step['next']};")
-
-
-```
-
 ## Overview
 
 Text summarization is a crucial natural language processing task that involves condensing large documents into concise and informative summaries. This project focuses on comparing the performance of various text summarization models to help users choose the most suitable model for their specific needs.
