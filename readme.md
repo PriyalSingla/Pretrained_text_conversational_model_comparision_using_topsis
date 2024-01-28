@@ -2,24 +2,18 @@
 
 ```mermaid
 
-digraph flowchart {
-  Start [label="Start"]
-  LoadData [label="Step 1: Load Data"]
-  PreprocessText [label="Step 2: Preprocess Text"]
-  ChooseMetrics [label="Step 3: Choose Metrics"]
-  ApplyTOPSIS [label="Step 4: Apply TOPSIS"]
-  RankModels [label="Step 5: Rank Models"]
-  VisualizeResults [label="Step 6: Visualize Results"]
-  End [label="Step 7: End"]
+flowchart = [
+    {"step": "Start", "action": "Step 1", "next": "LoadData"},
+    {"step": "LoadData", "action": "Step 2", "next": "PreprocessText"},
+    {"step": "PreprocessText", "action": "Step 3", "next": "ChooseMetrics"},
+    {"step": "ChooseMetrics", "action": "Step 4", "next": "ApplyTOPSIS"},
+    {"step": "ApplyTOPSIS", "action": "Step 5", "next": "RankModels"},
+    {"step": "RankModels", "action": "Step 6", "next": "VisualizeResults"},
+    {"step": "VisualizeResults", "action": "Step 7", "next": "End"},
+]
 
-  Start -> LoadData
-  LoadData -> PreprocessText
-  PreprocessText -> ChooseMetrics
-  ChooseMetrics -> ApplyTOPSIS
-  ApplyTOPSIS -> RankModels
-  RankModels -> VisualizeResults
-  VisualizeResults -> End
-}
+for step in flowchart:
+    print(f"{step['step']} -->|{step['action']}| {step['next']};")
 
 
 ```
