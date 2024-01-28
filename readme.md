@@ -2,7 +2,7 @@
 
 ## Overview
 
-Text summarization is a crucial natural language processing task that involves condensing large documents into concise and informative summaries. This project focuses on comparing the performance of various text summarization models to help users choose the most suitable model for their specific needs.
+"Text conversational" generally refers to a style or form of communication that is written or expressed in a conversational manner, similar to how people talk in everyday conversations. This style often includes informal language, a more relaxed tone, and may include elements like colloquialisms or casual expressions. The goal is to make written communication sound more natural and approachable, resembling the way people speak in face-to-face conversations. It's commonly used in various forms of written communication, such as messaging, social media posts, or informal articles, to create a friendly and engaging tone.
 
 ## Key Features:
 
@@ -29,7 +29,7 @@ Text summarization is a crucial natural language processing task that involves c
 
 1. **Ranked Table:**
 
-- Explore detailed ranked results in summarization_table_result.csv:
+- Explore detailed ranked results in conversational result.csv:
   | Model | Accuracy | F1_Score | Precision | Recall | TOPSIS_Score | Rank |
   |-----------------------|----------|----------|-----------|--------|--------------|------|
   | bert-base-uncased | 0.85 | 0.89 | 0.88 | 0.87 | 0.52040369 | 5 |
@@ -61,4 +61,4 @@ electra-base: High precision, excellent ROUGE-L scores, and a good balance of ac
 Next Steps:<br>
 Feel free to analyze the provided CSV files for more insights.
 Consider adjusting the evaluation metrics or adding new models based on your specific use case.
-Use the project as a foundation for ongoing research and development in text summarization.
+Use the project as a foundation for ongoing research and development in text conversational.
