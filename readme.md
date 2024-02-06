@@ -15,7 +15,7 @@
    - The Technique for Order of Preference by Similarity to Ideal Solution (TOPSIS) method is employed for the comparison. This method considers both the similarity to the ideal solution and the dissimilarity to the negative ideal solution, providing a comprehensive ranking.
 
 3. **Models Evaluated:**
-   - Real-world pretrained models, such as bert-base-uncased, distilbert-base-uncased, gpt2,roberta-base, t5-base, and Pelectra-base, are included in the comparison. These models are widely used in text summarization tasks.
+   - Real-world pretrained models, such as bert-base-uncased, distilbert-base-uncased, gpt2,roberta-base, t5-base, and Pelectra-base, are included in the comparison. These models are widely used in text conversational tasks.
 
 ## Project Structure:
 
